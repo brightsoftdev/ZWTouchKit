@@ -1,0 +1,7 @@
+#ifdef __OBJC__
+#import <ZWCoreKit/ZWCoreKitAvailability.h>
+#import <ZWCoreKit/ZWCoreKitTypes.h>
+#import <ZWCoreKit/ZWCoreKitConstants.h>
+#import <ZWCoreKit/ZWCoreKitMacros.h>
+#import "ZWTouchKitAvailability.h"
+#endif

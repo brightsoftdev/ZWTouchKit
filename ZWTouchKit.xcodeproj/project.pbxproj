@@ -1,0 +1,638 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE087AFF1456273B00966537 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE6E6D6143128F5001AAA59 /* UIKit.framework */; };
+		EE98658114914F28007CD136 /* ZWActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98652C14914F28007CD136 /* ZWActionSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE98658214914F28007CD136 /* ZWActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98652D14914F28007CD136 /* ZWActionSheet.m */; };
+		EE98658314914F28007CD136 /* ZWActivityIndicatorController.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98652E14914F28007CD136 /* ZWActivityIndicatorController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE98658414914F28007CD136 /* ZWActivityIndicatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98652F14914F28007CD136 /* ZWActivityIndicatorController.m */; };
+		EE98658514914F28007CD136 /* ZWActivityView.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98653014914F28007CD136 /* ZWActivityView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE98658614914F28007CD136 /* ZWActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98653114914F28007CD136 /* ZWActivityView.m */; };
+		EE98658714914F28007CD136 /* ZWAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98653214914F28007CD136 /* ZWAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE98658814914F28007CD136 /* ZWAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98653314914F28007CD136 /* ZWAlertView.m */; };
+		EE98658914914F28007CD136 /* ZWApplicationStateDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98653414914F28007CD136 /* ZWApplicationStateDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE98658A14914F28007CD136 /* ZWApplicationStateDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98653514914F28007CD136 /* ZWApplicationStateDelegate.m */; };
+		EE98658B14914F28007CD136 /* ZWAudioPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98653614914F28007CD136 /* ZWAudioPlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE98658C14914F28007CD136 /* ZWAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98653714914F28007CD136 /* ZWAudioPlayer.m */; };
+		EE98658D14914F28007CD136 /* ZWFirstResponderView.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98653814914F28007CD136 /* ZWFirstResponderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE98658E14914F28007CD136 /* ZWFirstResponderView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98653914914F28007CD136 /* ZWFirstResponderView.m */; };
+		EE98658F14914F28007CD136 /* ZWGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98653A14914F28007CD136 /* ZWGradientView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE98659014914F28007CD136 /* ZWGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98653B14914F28007CD136 /* ZWGradientView.m */; };
+		EE98659114914F28007CD136 /* ZWKeyboardDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98653C14914F28007CD136 /* ZWKeyboardDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE98659214914F28007CD136 /* ZWKeyboardDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98653D14914F28007CD136 /* ZWKeyboardDelegate.m */; };
+		EE98659314914F28007CD136 /* ZWNetworkActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98653E14914F28007CD136 /* ZWNetworkActivity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE98659414914F28007CD136 /* ZWNetworkActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98653F14914F28007CD136 /* ZWNetworkActivity.m */; };
+		EE98659514914F28007CD136 /* ZWShapeView.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98654014914F28007CD136 /* ZWShapeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE98659614914F28007CD136 /* ZWShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98654114914F28007CD136 /* ZWShapeView.m */; };
+		EE98659714914F28007CD136 /* ZWStretchableHorizontalImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98654214914F28007CD136 /* ZWStretchableHorizontalImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE98659814914F28007CD136 /* ZWStretchableHorizontalImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98654314914F28007CD136 /* ZWStretchableHorizontalImageView.m */; };
+		EE98659914914F28007CD136 /* ZWStretchableImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98654414914F28007CD136 /* ZWStretchableImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE98659A14914F28007CD136 /* ZWStretchableImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98654514914F28007CD136 /* ZWStretchableImageView.m */; };
+		EE98659B14914F28007CD136 /* ZWStretchableVerticalImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98654614914F28007CD136 /* ZWStretchableVerticalImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE98659C14914F28007CD136 /* ZWStretchableVerticalImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98654714914F28007CD136 /* ZWStretchableVerticalImageView.m */; };
+		EE98659D14914F28007CD136 /* ZWTableViewAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98654814914F28007CD136 /* ZWTableViewAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE98659E14914F28007CD136 /* ZWTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98654914914F28007CD136 /* ZWTableViewAdapter.m */; };
+		EE98659F14914F28007CD136 /* ZWTableViewAdapterDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98654A14914F28007CD136 /* ZWTableViewAdapterDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865A014914F28007CD136 /* ZWTableViewAdapterPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98654B14914F28007CD136 /* ZWTableViewAdapterPrivate.h */; };
+		EE9865A114914F28007CD136 /* ZWTableViewAdapterRow.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98654C14914F28007CD136 /* ZWTableViewAdapterRow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865A214914F28007CD136 /* ZWTableViewAdapterRow.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98654D14914F28007CD136 /* ZWTableViewAdapterRow.m */; };
+		EE9865A314914F28007CD136 /* ZWTableViewAdapterSection.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98654E14914F28007CD136 /* ZWTableViewAdapterSection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865A414914F28007CD136 /* ZWTableViewAdapterSection.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98654F14914F28007CD136 /* ZWTableViewAdapterSection.m */; };
+		EE9865A514914F28007CD136 /* ZWTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98655014914F28007CD136 /* ZWTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865A614914F28007CD136 /* ZWTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98655114914F28007CD136 /* ZWTextView.m */; };
+		EE9865A714914F28007CD136 /* ZWTouchKit-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = EE98655214914F28007CD136 /* ZWTouchKit-Prefix.pch */; };
+		EE9865A814914F28007CD136 /* ZWTouchKit.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98655314914F28007CD136 /* ZWTouchKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865A914914F28007CD136 /* ZWTouchKitAvailability.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98655414914F28007CD136 /* ZWTouchKitAvailability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865AA14914F28007CD136 /* ZWTransitionQueueView.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98655514914F28007CD136 /* ZWTransitionQueueView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865AB14914F28007CD136 /* ZWTransitionQueueView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98655614914F28007CD136 /* ZWTransitionQueueView.m */; };
+		EE9865AC14914F28007CD136 /* ZWTransitionView.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98655714914F28007CD136 /* ZWTransitionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865AD14914F28007CD136 /* ZWTransitionView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98655814914F28007CD136 /* ZWTransitionView.m */; };
+		EE9865AE14914F28007CD136 /* ZWWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98655914914F28007CD136 /* ZWWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865AF14914F28007CD136 /* ZWWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98655A14914F28007CD136 /* ZWWebViewController.m */; };
+		EE9865B014914F28007CD136 /* MapKit+ZWTouchExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98655B14914F28007CD136 /* MapKit+ZWTouchExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865B114914F28007CD136 /* MapKit+ZWTouchExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98655C14914F28007CD136 /* MapKit+ZWTouchExtensions.m */; };
+		EE9865B214914F28007CD136 /* MKMapView+ZWTouchExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98655D14914F28007CD136 /* MKMapView+ZWTouchExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865B314914F28007CD136 /* MKMapView+ZWTouchExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98655E14914F28007CD136 /* MKMapView+ZWTouchExtensions.m */; };
+		EE9865B414914F28007CD136 /* NSIndexPath+ZWTouchExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98655F14914F28007CD136 /* NSIndexPath+ZWTouchExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865B514914F28007CD136 /* NSIndexPath+ZWTouchExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98656014914F28007CD136 /* NSIndexPath+ZWTouchExtensions.m */; };
+		EE9865B614914F28007CD136 /* UIActionSheet+ZWTouchExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98656114914F28007CD136 /* UIActionSheet+ZWTouchExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865B714914F28007CD136 /* UIActionSheet+ZWTouchExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98656214914F28007CD136 /* UIActionSheet+ZWTouchExtensions.m */; };
+		EE9865B814914F28007CD136 /* UIAlertView+ZWTouchExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98656314914F28007CD136 /* UIAlertView+ZWTouchExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865B914914F28007CD136 /* UIAlertView+ZWTouchExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98656414914F28007CD136 /* UIAlertView+ZWTouchExtensions.m */; };
+		EE9865BA14914F28007CD136 /* UIBarButtonItem+ZWTouchExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98656514914F28007CD136 /* UIBarButtonItem+ZWTouchExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865BB14914F28007CD136 /* UIBarButtonItem+ZWTouchExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98656614914F28007CD136 /* UIBarButtonItem+ZWTouchExtensions.m */; };
+		EE9865BC14914F28007CD136 /* UIColor+ZWTouchExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98656714914F28007CD136 /* UIColor+ZWTouchExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865BD14914F28007CD136 /* UIColor+ZWTouchExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98656814914F28007CD136 /* UIColor+ZWTouchExtensions.m */; };
+		EE9865BE14914F28007CD136 /* UIDevice+ZWTouchExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98656914914F28007CD136 /* UIDevice+ZWTouchExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865BF14914F28007CD136 /* UIDevice+ZWTouchExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98656A14914F28007CD136 /* UIDevice+ZWTouchExtensions.m */; };
+		EE9865C014914F28007CD136 /* UIFont+ZWTouchExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98656B14914F28007CD136 /* UIFont+ZWTouchExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865C114914F28007CD136 /* UIFont+ZWTouchExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98656C14914F28007CD136 /* UIFont+ZWTouchExtensions.m */; };
+		EE9865C214914F28007CD136 /* UIImage+ZWTouchExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98656D14914F28007CD136 /* UIImage+ZWTouchExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865C314914F28007CD136 /* UIImage+ZWTouchExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98656E14914F28007CD136 /* UIImage+ZWTouchExtensions.m */; };
+		EE9865C414914F28007CD136 /* UIImageView+ZWTouchExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98656F14914F28007CD136 /* UIImageView+ZWTouchExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865C514914F28007CD136 /* UIImageView+ZWTouchExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98657014914F28007CD136 /* UIImageView+ZWTouchExtensions.m */; };
+		EE9865C614914F28007CD136 /* UILabel+ZWTouchExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98657114914F28007CD136 /* UILabel+ZWTouchExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865C714914F28007CD136 /* UILabel+ZWTouchExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98657214914F28007CD136 /* UILabel+ZWTouchExtensions.m */; };
+		EE9865C814914F28007CD136 /* UINavigationController+ZWTouchExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98657314914F28007CD136 /* UINavigationController+ZWTouchExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865C914914F28007CD136 /* UINavigationController+ZWTouchExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98657414914F28007CD136 /* UINavigationController+ZWTouchExtensions.m */; };
+		EE9865CA14914F28007CD136 /* UINib+ZWTouchExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98657514914F28007CD136 /* UINib+ZWTouchExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865CB14914F28007CD136 /* UINib+ZWTouchExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98657614914F28007CD136 /* UINib+ZWTouchExtensions.m */; };
+		EE9865CC14914F28007CD136 /* UITableView+ZWTouchExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98657714914F28007CD136 /* UITableView+ZWTouchExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865CD14914F28007CD136 /* UITableView+ZWTouchExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98657814914F28007CD136 /* UITableView+ZWTouchExtensions.m */; };
+		EE9865CE14914F28007CD136 /* UITableViewCell+ZWTouchExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98657914914F28007CD136 /* UITableViewCell+ZWTouchExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865CF14914F28007CD136 /* UITableViewCell+ZWTouchExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98657A14914F28007CD136 /* UITableViewCell+ZWTouchExtensions.m */; };
+		EE9865D014914F28007CD136 /* UIView+ZWTouchExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98657B14914F28007CD136 /* UIView+ZWTouchExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865D114914F28007CD136 /* UIView+ZWTouchExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98657C14914F28007CD136 /* UIView+ZWTouchExtensions.m */; };
+		EE9865D214914F28007CD136 /* UIViewController+ZWTouchExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98657D14914F28007CD136 /* UIViewController+ZWTouchExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865D314914F28007CD136 /* UIViewController+ZWTouchExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98657E14914F28007CD136 /* UIViewController+ZWTouchExtensions.m */; };
+		EE9865D414914F28007CD136 /* UIWebView+ZWTouchExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98657F14914F28007CD136 /* UIWebView+ZWTouchExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9865D514914F28007CD136 /* UIWebView+ZWTouchExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98658014914F28007CD136 /* UIWebView+ZWTouchExtensions.m */; };
+		F2AFE4A92A7446C6AE669000 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C636C932874743799138EA71 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		29F8F08762A2440681FE6B20 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		C636C932874743799138EA71 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE087AD0145626EB00966537 /* libZWTouchKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZWTouchKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE98652C14914F28007CD136 /* ZWActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWActionSheet.h; sourceTree = "<group>"; };
+		EE98652D14914F28007CD136 /* ZWActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWActionSheet.m; sourceTree = "<group>"; };
+		EE98652E14914F28007CD136 /* ZWActivityIndicatorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWActivityIndicatorController.h; sourceTree = "<group>"; };
+		EE98652F14914F28007CD136 /* ZWActivityIndicatorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWActivityIndicatorController.m; sourceTree = "<group>"; };
+		EE98653014914F28007CD136 /* ZWActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWActivityView.h; sourceTree = "<group>"; };
+		EE98653114914F28007CD136 /* ZWActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWActivityView.m; sourceTree = "<group>"; };
+		EE98653214914F28007CD136 /* ZWAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWAlertView.h; sourceTree = "<group>"; };
+		EE98653314914F28007CD136 /* ZWAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWAlertView.m; sourceTree = "<group>"; };
+		EE98653414914F28007CD136 /* ZWApplicationStateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWApplicationStateDelegate.h; sourceTree = "<group>"; };
+		EE98653514914F28007CD136 /* ZWApplicationStateDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWApplicationStateDelegate.m; sourceTree = "<group>"; };
+		EE98653614914F28007CD136 /* ZWAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWAudioPlayer.h; sourceTree = "<group>"; };
+		EE98653714914F28007CD136 /* ZWAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWAudioPlayer.m; sourceTree = "<group>"; };
+		EE98653814914F28007CD136 /* ZWFirstResponderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWFirstResponderView.h; sourceTree = "<group>"; };
+		EE98653914914F28007CD136 /* ZWFirstResponderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWFirstResponderView.m; sourceTree = "<group>"; };
+		EE98653A14914F28007CD136 /* ZWGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWGradientView.h; sourceTree = "<group>"; };
+		EE98653B14914F28007CD136 /* ZWGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWGradientView.m; sourceTree = "<group>"; };
+		EE98653C14914F28007CD136 /* ZWKeyboardDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWKeyboardDelegate.h; sourceTree = "<group>"; };
+		EE98653D14914F28007CD136 /* ZWKeyboardDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWKeyboardDelegate.m; sourceTree = "<group>"; };
+		EE98653E14914F28007CD136 /* ZWNetworkActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWNetworkActivity.h; sourceTree = "<group>"; };
+		EE98653F14914F28007CD136 /* ZWNetworkActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWNetworkActivity.m; sourceTree = "<group>"; };
+		EE98654014914F28007CD136 /* ZWShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWShapeView.h; sourceTree = "<group>"; };
+		EE98654114914F28007CD136 /* ZWShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWShapeView.m; sourceTree = "<group>"; };
+		EE98654214914F28007CD136 /* ZWStretchableHorizontalImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWStretchableHorizontalImageView.h; sourceTree = "<group>"; };
+		EE98654314914F28007CD136 /* ZWStretchableHorizontalImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWStretchableHorizontalImageView.m; sourceTree = "<group>"; };
+		EE98654414914F28007CD136 /* ZWStretchableImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWStretchableImageView.h; sourceTree = "<group>"; };
+		EE98654514914F28007CD136 /* ZWStretchableImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWStretchableImageView.m; sourceTree = "<group>"; };
+		EE98654614914F28007CD136 /* ZWStretchableVerticalImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWStretchableVerticalImageView.h; sourceTree = "<group>"; };
+		EE98654714914F28007CD136 /* ZWStretchableVerticalImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWStretchableVerticalImageView.m; sourceTree = "<group>"; };
+		EE98654814914F28007CD136 /* ZWTableViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWTableViewAdapter.h; sourceTree = "<group>"; };
+		EE98654914914F28007CD136 /* ZWTableViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWTableViewAdapter.m; sourceTree = "<group>"; };
+		EE98654A14914F28007CD136 /* ZWTableViewAdapterDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWTableViewAdapterDelegate.h; sourceTree = "<group>"; };
+		EE98654B14914F28007CD136 /* ZWTableViewAdapterPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWTableViewAdapterPrivate.h; sourceTree = "<group>"; };
+		EE98654C14914F28007CD136 /* ZWTableViewAdapterRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWTableViewAdapterRow.h; sourceTree = "<group>"; };
+		EE98654D14914F28007CD136 /* ZWTableViewAdapterRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWTableViewAdapterRow.m; sourceTree = "<group>"; };
+		EE98654E14914F28007CD136 /* ZWTableViewAdapterSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWTableViewAdapterSection.h; sourceTree = "<group>"; };
+		EE98654F14914F28007CD136 /* ZWTableViewAdapterSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWTableViewAdapterSection.m; sourceTree = "<group>"; };
+		EE98655014914F28007CD136 /* ZWTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWTextView.h; sourceTree = "<group>"; };
+		EE98655114914F28007CD136 /* ZWTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWTextView.m; sourceTree = "<group>"; };
+		EE98655214914F28007CD136 /* ZWTouchKit-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZWTouchKit-Prefix.pch"; sourceTree = "<group>"; };
+		EE98655314914F28007CD136 /* ZWTouchKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWTouchKit.h; sourceTree = "<group>"; };
+		EE98655414914F28007CD136 /* ZWTouchKitAvailability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWTouchKitAvailability.h; sourceTree = "<group>"; };
+		EE98655514914F28007CD136 /* ZWTransitionQueueView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWTransitionQueueView.h; sourceTree = "<group>"; };
+		EE98655614914F28007CD136 /* ZWTransitionQueueView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWTransitionQueueView.m; sourceTree = "<group>"; };
+		EE98655714914F28007CD136 /* ZWTransitionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWTransitionView.h; sourceTree = "<group>"; };
+		EE98655814914F28007CD136 /* ZWTransitionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWTransitionView.m; sourceTree = "<group>"; };
+		EE98655914914F28007CD136 /* ZWWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWWebViewController.h; sourceTree = "<group>"; };
+		EE98655A14914F28007CD136 /* ZWWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWWebViewController.m; sourceTree = "<group>"; };
+		EE98655B14914F28007CD136 /* MapKit+ZWTouchExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MapKit+ZWTouchExtensions.h"; sourceTree = "<group>"; };
+		EE98655C14914F28007CD136 /* MapKit+ZWTouchExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MapKit+ZWTouchExtensions.m"; sourceTree = "<group>"; };
+		EE98655D14914F28007CD136 /* MKMapView+ZWTouchExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKMapView+ZWTouchExtensions.h"; sourceTree = "<group>"; };
+		EE98655E14914F28007CD136 /* MKMapView+ZWTouchExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKMapView+ZWTouchExtensions.m"; sourceTree = "<group>"; };
+		EE98655F14914F28007CD136 /* NSIndexPath+ZWTouchExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+ZWTouchExtensions.h"; sourceTree = "<group>"; };
+		EE98656014914F28007CD136 /* NSIndexPath+ZWTouchExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+ZWTouchExtensions.m"; sourceTree = "<group>"; };
+		EE98656114914F28007CD136 /* UIActionSheet+ZWTouchExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+ZWTouchExtensions.h"; sourceTree = "<group>"; };
+		EE98656214914F28007CD136 /* UIActionSheet+ZWTouchExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+ZWTouchExtensions.m"; sourceTree = "<group>"; };
+		EE98656314914F28007CD136 /* UIAlertView+ZWTouchExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+ZWTouchExtensions.h"; sourceTree = "<group>"; };
+		EE98656414914F28007CD136 /* UIAlertView+ZWTouchExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+ZWTouchExtensions.m"; sourceTree = "<group>"; };
+		EE98656514914F28007CD136 /* UIBarButtonItem+ZWTouchExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+ZWTouchExtensions.h"; sourceTree = "<group>"; };
+		EE98656614914F28007CD136 /* UIBarButtonItem+ZWTouchExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+ZWTouchExtensions.m"; sourceTree = "<group>"; };
+		EE98656714914F28007CD136 /* UIColor+ZWTouchExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ZWTouchExtensions.h"; sourceTree = "<group>"; };
+		EE98656814914F28007CD136 /* UIColor+ZWTouchExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ZWTouchExtensions.m"; sourceTree = "<group>"; };
+		EE98656914914F28007CD136 /* UIDevice+ZWTouchExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+ZWTouchExtensions.h"; sourceTree = "<group>"; };
+		EE98656A14914F28007CD136 /* UIDevice+ZWTouchExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+ZWTouchExtensions.m"; sourceTree = "<group>"; };
+		EE98656B14914F28007CD136 /* UIFont+ZWTouchExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+ZWTouchExtensions.h"; sourceTree = "<group>"; };
+		EE98656C14914F28007CD136 /* UIFont+ZWTouchExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+ZWTouchExtensions.m"; sourceTree = "<group>"; };
+		EE98656D14914F28007CD136 /* UIImage+ZWTouchExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZWTouchExtensions.h"; sourceTree = "<group>"; };
+		EE98656E14914F28007CD136 /* UIImage+ZWTouchExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZWTouchExtensions.m"; sourceTree = "<group>"; };
+		EE98656F14914F28007CD136 /* UIImageView+ZWTouchExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ZWTouchExtensions.h"; sourceTree = "<group>"; };
+		EE98657014914F28007CD136 /* UIImageView+ZWTouchExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ZWTouchExtensions.m"; sourceTree = "<group>"; };
+		EE98657114914F28007CD136 /* UILabel+ZWTouchExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+ZWTouchExtensions.h"; sourceTree = "<group>"; };
+		EE98657214914F28007CD136 /* UILabel+ZWTouchExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ZWTouchExtensions.m"; sourceTree = "<group>"; };
+		EE98657314914F28007CD136 /* UINavigationController+ZWTouchExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+ZWTouchExtensions.h"; sourceTree = "<group>"; };
+		EE98657414914F28007CD136 /* UINavigationController+ZWTouchExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+ZWTouchExtensions.m"; sourceTree = "<group>"; };
+		EE98657514914F28007CD136 /* UINib+ZWTouchExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINib+ZWTouchExtensions.h"; sourceTree = "<group>"; };
+		EE98657614914F28007CD136 /* UINib+ZWTouchExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINib+ZWTouchExtensions.m"; sourceTree = "<group>"; };
+		EE98657714914F28007CD136 /* UITableView+ZWTouchExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+ZWTouchExtensions.h"; sourceTree = "<group>"; };
+		EE98657814914F28007CD136 /* UITableView+ZWTouchExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+ZWTouchExtensions.m"; sourceTree = "<group>"; };
+		EE98657914914F28007CD136 /* UITableViewCell+ZWTouchExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+ZWTouchExtensions.h"; sourceTree = "<group>"; };
+		EE98657A14914F28007CD136 /* UITableViewCell+ZWTouchExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+ZWTouchExtensions.m"; sourceTree = "<group>"; };
+		EE98657B14914F28007CD136 /* UIView+ZWTouchExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZWTouchExtensions.h"; sourceTree = "<group>"; };
+		EE98657C14914F28007CD136 /* UIView+ZWTouchExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZWTouchExtensions.m"; sourceTree = "<group>"; };
+		EE98657D14914F28007CD136 /* UIViewController+ZWTouchExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ZWTouchExtensions.h"; sourceTree = "<group>"; };
+		EE98657E14914F28007CD136 /* UIViewController+ZWTouchExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ZWTouchExtensions.m"; sourceTree = "<group>"; };
+		EE98657F14914F28007CD136 /* UIWebView+ZWTouchExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+ZWTouchExtensions.h"; sourceTree = "<group>"; };
+		EE98658014914F28007CD136 /* UIWebView+ZWTouchExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+ZWTouchExtensions.m"; sourceTree = "<group>"; };
+		EEE6E6D6143128F5001AAA59 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE087ACD145626EB00966537 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE087AFF1456273B00966537 /* UIKit.framework in Frameworks */,
+				F2AFE4A92A7446C6AE669000 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE0D261C13D645E600947556 = {
+			isa = PBXGroup;
+			children = (
+				EE98652B14914F28007CD136 /* ZWTouchKit */,
+				EE0D262913D645E600947556 /* Frameworks */,
+				EE0D262813D645E600947556 /* Products */,
+				29F8F08762A2440681FE6B20 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		EE0D262813D645E600947556 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE087AD0145626EB00966537 /* libZWTouchKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE0D262913D645E600947556 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEE6E6D6143128F5001AAA59 /* UIKit.framework */,
+				C636C932874743799138EA71 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE98652B14914F28007CD136 /* ZWTouchKit */ = {
+			isa = PBXGroup;
+			children = (
+				EE98655214914F28007CD136 /* ZWTouchKit-Prefix.pch */,
+				EE98655314914F28007CD136 /* ZWTouchKit.h */,
+				EE98655414914F28007CD136 /* ZWTouchKitAvailability.h */,
+				EEBC76041491518B00AE434F /* Controllers */,
+				EEBC76001491516100AE434F /* Views */,
+				EEBC76031491518200AE434F /* Utilities */,
+				EEBC76021491517B00AE434F /* Audio */,
+				EEBC76011491517100AE434F /* Table View Adapter */,
+				EE9865D614914F35007CD136 /* Extensions */,
+			);
+			path = ZWTouchKit;
+			sourceTree = "<group>";
+		};
+		EE9865D614914F35007CD136 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EE98655B14914F28007CD136 /* MapKit+ZWTouchExtensions.h */,
+				EE98655C14914F28007CD136 /* MapKit+ZWTouchExtensions.m */,
+				EE98655D14914F28007CD136 /* MKMapView+ZWTouchExtensions.h */,
+				EE98655E14914F28007CD136 /* MKMapView+ZWTouchExtensions.m */,
+				EE98655F14914F28007CD136 /* NSIndexPath+ZWTouchExtensions.h */,
+				EE98656014914F28007CD136 /* NSIndexPath+ZWTouchExtensions.m */,
+				EE98656114914F28007CD136 /* UIActionSheet+ZWTouchExtensions.h */,
+				EE98656214914F28007CD136 /* UIActionSheet+ZWTouchExtensions.m */,
+				EE98656314914F28007CD136 /* UIAlertView+ZWTouchExtensions.h */,
+				EE98656414914F28007CD136 /* UIAlertView+ZWTouchExtensions.m */,
+				EE98656514914F28007CD136 /* UIBarButtonItem+ZWTouchExtensions.h */,
+				EE98656614914F28007CD136 /* UIBarButtonItem+ZWTouchExtensions.m */,
+				EE98656714914F28007CD136 /* UIColor+ZWTouchExtensions.h */,
+				EE98656814914F28007CD136 /* UIColor+ZWTouchExtensions.m */,
+				EE98656914914F28007CD136 /* UIDevice+ZWTouchExtensions.h */,
+				EE98656A14914F28007CD136 /* UIDevice+ZWTouchExtensions.m */,
+				EE98656B14914F28007CD136 /* UIFont+ZWTouchExtensions.h */,
+				EE98656C14914F28007CD136 /* UIFont+ZWTouchExtensions.m */,
+				EE98656D14914F28007CD136 /* UIImage+ZWTouchExtensions.h */,
+				EE98656E14914F28007CD136 /* UIImage+ZWTouchExtensions.m */,
+				EE98656F14914F28007CD136 /* UIImageView+ZWTouchExtensions.h */,
+				EE98657014914F28007CD136 /* UIImageView+ZWTouchExtensions.m */,
+				EE98657114914F28007CD136 /* UILabel+ZWTouchExtensions.h */,
+				EE98657214914F28007CD136 /* UILabel+ZWTouchExtensions.m */,
+				EE98657314914F28007CD136 /* UINavigationController+ZWTouchExtensions.h */,
+				EE98657414914F28007CD136 /* UINavigationController+ZWTouchExtensions.m */,
+				EE98657514914F28007CD136 /* UINib+ZWTouchExtensions.h */,
+				EE98657614914F28007CD136 /* UINib+ZWTouchExtensions.m */,
+				EE98657714914F28007CD136 /* UITableView+ZWTouchExtensions.h */,
+				EE98657814914F28007CD136 /* UITableView+ZWTouchExtensions.m */,
+				EE98657914914F28007CD136 /* UITableViewCell+ZWTouchExtensions.h */,
+				EE98657A14914F28007CD136 /* UITableViewCell+ZWTouchExtensions.m */,
+				EE98657B14914F28007CD136 /* UIView+ZWTouchExtensions.h */,
+				EE98657C14914F28007CD136 /* UIView+ZWTouchExtensions.m */,
+				EE98657D14914F28007CD136 /* UIViewController+ZWTouchExtensions.h */,
+				EE98657E14914F28007CD136 /* UIViewController+ZWTouchExtensions.m */,
+				EE98657F14914F28007CD136 /* UIWebView+ZWTouchExtensions.h */,
+				EE98658014914F28007CD136 /* UIWebView+ZWTouchExtensions.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		EEBC76001491516100AE434F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE98652C14914F28007CD136 /* ZWActionSheet.h */,
+				EE98652D14914F28007CD136 /* ZWActionSheet.m */,
+				EE98653014914F28007CD136 /* ZWActivityView.h */,
+				EE98653114914F28007CD136 /* ZWActivityView.m */,
+				EE98653214914F28007CD136 /* ZWAlertView.h */,
+				EE98653314914F28007CD136 /* ZWAlertView.m */,
+				EE98653814914F28007CD136 /* ZWFirstResponderView.h */,
+				EE98653914914F28007CD136 /* ZWFirstResponderView.m */,
+				EE98653A14914F28007CD136 /* ZWGradientView.h */,
+				EE98653B14914F28007CD136 /* ZWGradientView.m */,
+				EE98654014914F28007CD136 /* ZWShapeView.h */,
+				EE98654114914F28007CD136 /* ZWShapeView.m */,
+				EE98654214914F28007CD136 /* ZWStretchableHorizontalImageView.h */,
+				EE98654314914F28007CD136 /* ZWStretchableHorizontalImageView.m */,
+				EE98654414914F28007CD136 /* ZWStretchableImageView.h */,
+				EE98654514914F28007CD136 /* ZWStretchableImageView.m */,
+				EE98654614914F28007CD136 /* ZWStretchableVerticalImageView.h */,
+				EE98654714914F28007CD136 /* ZWStretchableVerticalImageView.m */,
+				EE98655014914F28007CD136 /* ZWTextView.h */,
+				EE98655114914F28007CD136 /* ZWTextView.m */,
+				EE98655514914F28007CD136 /* ZWTransitionQueueView.h */,
+				EE98655614914F28007CD136 /* ZWTransitionQueueView.m */,
+				EE98655714914F28007CD136 /* ZWTransitionView.h */,
+				EE98655814914F28007CD136 /* ZWTransitionView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		EEBC76011491517100AE434F /* Table View Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				EE98654814914F28007CD136 /* ZWTableViewAdapter.h */,
+				EE98654914914F28007CD136 /* ZWTableViewAdapter.m */,
+				EE98654A14914F28007CD136 /* ZWTableViewAdapterDelegate.h */,
+				EE98654B14914F28007CD136 /* ZWTableViewAdapterPrivate.h */,
+				EE98654C14914F28007CD136 /* ZWTableViewAdapterRow.h */,
+				EE98654D14914F28007CD136 /* ZWTableViewAdapterRow.m */,
+				EE98654E14914F28007CD136 /* ZWTableViewAdapterSection.h */,
+				EE98654F14914F28007CD136 /* ZWTableViewAdapterSection.m */,
+			);
+			name = "Table View Adapter";
+			sourceTree = "<group>";
+		};
+		EEBC76021491517B00AE434F /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				EE98653614914F28007CD136 /* ZWAudioPlayer.h */,
+				EE98653714914F28007CD136 /* ZWAudioPlayer.m */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		EEBC76031491518200AE434F /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EE98653E14914F28007CD136 /* ZWNetworkActivity.h */,
+				EE98653F14914F28007CD136 /* ZWNetworkActivity.m */,
+				EE98653414914F28007CD136 /* ZWApplicationStateDelegate.h */,
+				EE98653514914F28007CD136 /* ZWApplicationStateDelegate.m */,
+				EE98653C14914F28007CD136 /* ZWKeyboardDelegate.h */,
+				EE98653D14914F28007CD136 /* ZWKeyboardDelegate.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		EEBC76041491518B00AE434F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE98652E14914F28007CD136 /* ZWActivityIndicatorController.h */,
+				EE98652F14914F28007CD136 /* ZWActivityIndicatorController.m */,
+				EE98655914914F28007CD136 /* ZWWebViewController.h */,
+				EE98655A14914F28007CD136 /* ZWWebViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EE087ACE145626EB00966537 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE98658114914F28007CD136 /* ZWActionSheet.h in Headers */,
+				EE98658314914F28007CD136 /* ZWActivityIndicatorController.h in Headers */,
+				EE98658514914F28007CD136 /* ZWActivityView.h in Headers */,
+				EE98658714914F28007CD136 /* ZWAlertView.h in Headers */,
+				EE98658914914F28007CD136 /* ZWApplicationStateDelegate.h in Headers */,
+				EE98658B14914F28007CD136 /* ZWAudioPlayer.h in Headers */,
+				EE98658D14914F28007CD136 /* ZWFirstResponderView.h in Headers */,
+				EE98658F14914F28007CD136 /* ZWGradientView.h in Headers */,
+				EE98659114914F28007CD136 /* ZWKeyboardDelegate.h in Headers */,
+				EE98659314914F28007CD136 /* ZWNetworkActivity.h in Headers */,
+				EE98659514914F28007CD136 /* ZWShapeView.h in Headers */,
+				EE98659714914F28007CD136 /* ZWStretchableHorizontalImageView.h in Headers */,
+				EE98659914914F28007CD136 /* ZWStretchableImageView.h in Headers */,
+				EE98659B14914F28007CD136 /* ZWStretchableVerticalImageView.h in Headers */,
+				EE98659D14914F28007CD136 /* ZWTableViewAdapter.h in Headers */,
+				EE98659F14914F28007CD136 /* ZWTableViewAdapterDelegate.h in Headers */,
+				EE9865A114914F28007CD136 /* ZWTableViewAdapterRow.h in Headers */,
+				EE9865A314914F28007CD136 /* ZWTableViewAdapterSection.h in Headers */,
+				EE9865A514914F28007CD136 /* ZWTextView.h in Headers */,
+				EE9865A814914F28007CD136 /* ZWTouchKit.h in Headers */,
+				EE9865A914914F28007CD136 /* ZWTouchKitAvailability.h in Headers */,
+				EE9865AA14914F28007CD136 /* ZWTransitionQueueView.h in Headers */,
+				EE9865AC14914F28007CD136 /* ZWTransitionView.h in Headers */,
+				EE9865AE14914F28007CD136 /* ZWWebViewController.h in Headers */,
+				EE9865B014914F28007CD136 /* MapKit+ZWTouchExtensions.h in Headers */,
+				EE9865B214914F28007CD136 /* MKMapView+ZWTouchExtensions.h in Headers */,
+				EE9865B414914F28007CD136 /* NSIndexPath+ZWTouchExtensions.h in Headers */,
+				EE9865B614914F28007CD136 /* UIActionSheet+ZWTouchExtensions.h in Headers */,
+				EE9865B814914F28007CD136 /* UIAlertView+ZWTouchExtensions.h in Headers */,
+				EE9865BA14914F28007CD136 /* UIBarButtonItem+ZWTouchExtensions.h in Headers */,
+				EE9865BC14914F28007CD136 /* UIColor+ZWTouchExtensions.h in Headers */,
+				EE9865BE14914F28007CD136 /* UIDevice+ZWTouchExtensions.h in Headers */,
+				EE9865C014914F28007CD136 /* UIFont+ZWTouchExtensions.h in Headers */,
+				EE9865C214914F28007CD136 /* UIImage+ZWTouchExtensions.h in Headers */,
+				EE9865C414914F28007CD136 /* UIImageView+ZWTouchExtensions.h in Headers */,
+				EE9865C614914F28007CD136 /* UILabel+ZWTouchExtensions.h in Headers */,
+				EE9865C814914F28007CD136 /* UINavigationController+ZWTouchExtensions.h in Headers */,
+				EE9865CA14914F28007CD136 /* UINib+ZWTouchExtensions.h in Headers */,
+				EE9865CC14914F28007CD136 /* UITableView+ZWTouchExtensions.h in Headers */,
+				EE9865CE14914F28007CD136 /* UITableViewCell+ZWTouchExtensions.h in Headers */,
+				EE9865D014914F28007CD136 /* UIView+ZWTouchExtensions.h in Headers */,
+				EE9865D214914F28007CD136 /* UIViewController+ZWTouchExtensions.h in Headers */,
+				EE9865D414914F28007CD136 /* UIWebView+ZWTouchExtensions.h in Headers */,
+				EE9865A014914F28007CD136 /* ZWTableViewAdapterPrivate.h in Headers */,
+				EE9865A714914F28007CD136 /* ZWTouchKit-Prefix.pch in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EE087ACF145626EB00966537 /* ZWTouchKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE087AD8145626EB00966537 /* Build configuration list for PBXNativeTarget "ZWTouchKit" */;
+			buildPhases = (
+				EE087ACC145626EB00966537 /* Sources */,
+				EE087ACD145626EB00966537 /* Frameworks */,
+				EE087ACE145626EB00966537 /* Headers */,
+				95D4B4C335084AF5B1B4BF48 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZWTouchKit;
+			productName = ZWTouchKit;
+			productReference = EE087AD0145626EB00966537 /* libZWTouchKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE0D261E13D645E600947556 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = EE0D262113D645E600947556 /* Build configuration list for PBXProject "ZWTouchKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EE0D261C13D645E600947556;
+			productRefGroup = EE0D262813D645E600947556 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE087ACF145626EB00966537 /* ZWTouchKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		95D4B4C335084AF5B1B4BF48 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE087ACC145626EB00966537 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE98658214914F28007CD136 /* ZWActionSheet.m in Sources */,
+				EE98658414914F28007CD136 /* ZWActivityIndicatorController.m in Sources */,
+				EE98658614914F28007CD136 /* ZWActivityView.m in Sources */,
+				EE98658814914F28007CD136 /* ZWAlertView.m in Sources */,
+				EE98658A14914F28007CD136 /* ZWApplicationStateDelegate.m in Sources */,
+				EE98658C14914F28007CD136 /* ZWAudioPlayer.m in Sources */,
+				EE98658E14914F28007CD136 /* ZWFirstResponderView.m in Sources */,
+				EE98659014914F28007CD136 /* ZWGradientView.m in Sources */,
+				EE98659214914F28007CD136 /* ZWKeyboardDelegate.m in Sources */,
+				EE98659414914F28007CD136 /* ZWNetworkActivity.m in Sources */,
+				EE98659614914F28007CD136 /* ZWShapeView.m in Sources */,
+				EE98659814914F28007CD136 /* ZWStretchableHorizontalImageView.m in Sources */,
+				EE98659A14914F28007CD136 /* ZWStretchableImageView.m in Sources */,
+				EE98659C14914F28007CD136 /* ZWStretchableVerticalImageView.m in Sources */,
+				EE98659E14914F28007CD136 /* ZWTableViewAdapter.m in Sources */,
+				EE9865A214914F28007CD136 /* ZWTableViewAdapterRow.m in Sources */,
+				EE9865A414914F28007CD136 /* ZWTableViewAdapterSection.m in Sources */,
+				EE9865A614914F28007CD136 /* ZWTextView.m in Sources */,
+				EE9865AB14914F28007CD136 /* ZWTransitionQueueView.m in Sources */,
+				EE9865AD14914F28007CD136 /* ZWTransitionView.m in Sources */,
+				EE9865AF14914F28007CD136 /* ZWWebViewController.m in Sources */,
+				EE9865B114914F28007CD136 /* MapKit+ZWTouchExtensions.m in Sources */,
+				EE9865B314914F28007CD136 /* MKMapView+ZWTouchExtensions.m in Sources */,
+				EE9865B514914F28007CD136 /* NSIndexPath+ZWTouchExtensions.m in Sources */,
+				EE9865B714914F28007CD136 /* UIActionSheet+ZWTouchExtensions.m in Sources */,
+				EE9865B914914F28007CD136 /* UIAlertView+ZWTouchExtensions.m in Sources */,
+				EE9865BB14914F28007CD136 /* UIBarButtonItem+ZWTouchExtensions.m in Sources */,
+				EE9865BD14914F28007CD136 /* UIColor+ZWTouchExtensions.m in Sources */,
+				EE9865BF14914F28007CD136 /* UIDevice+ZWTouchExtensions.m in Sources */,
+				EE9865C114914F28007CD136 /* UIFont+ZWTouchExtensions.m in Sources */,
+				EE9865C314914F28007CD136 /* UIImage+ZWTouchExtensions.m in Sources */,
+				EE9865C514914F28007CD136 /* UIImageView+ZWTouchExtensions.m in Sources */,
+				EE9865C714914F28007CD136 /* UILabel+ZWTouchExtensions.m in Sources */,
+				EE9865C914914F28007CD136 /* UINavigationController+ZWTouchExtensions.m in Sources */,
+				EE9865CB14914F28007CD136 /* UINib+ZWTouchExtensions.m in Sources */,
+				EE9865CD14914F28007CD136 /* UITableView+ZWTouchExtensions.m in Sources */,
+				EE9865CF14914F28007CD136 /* UITableViewCell+ZWTouchExtensions.m in Sources */,
+				EE9865D114914F28007CD136 /* UIView+ZWTouchExtensions.m in Sources */,
+				EE9865D314914F28007CD136 /* UIViewController+ZWTouchExtensions.m in Sources */,
+				EE9865D514914F28007CD136 /* UIWebView+ZWTouchExtensions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EE087AD9145626EB00966537 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRIVATE_HEADERS_FOLDER_PATH = ./include/ZWTouchKit/;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = ./include/ZWTouchKit/;
+			};
+			name = Debug;
+		};
+		EE087ADA145626EB00966537 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRIVATE_HEADERS_FOLDER_PATH = ./include/ZWTouchKit/;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = ./include/ZWTouchKit/;
+			};
+			name = Release;
+		};
+		EE0D263213D645E600947556 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29F8F08762A2440681FE6B20 /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZWTouchKit/ZWTouchKit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"RELEASE=0",
+					"DEBUG=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EE0D263313D645E600947556 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29F8F08762A2440681FE6B20 /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZWTouchKit/ZWTouchKit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"RELEASE=1",
+					"DEBUG=0",
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE087AD8145626EB00966537 /* Build configuration list for PBXNativeTarget "ZWTouchKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE087AD9145626EB00966537 /* Debug */,
+				EE087ADA145626EB00966537 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE0D262113D645E600947556 /* Build configuration list for PBXProject "ZWTouchKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE0D263213D645E600947556 /* Debug */,
+				EE0D263313D645E600947556 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE0D261E13D645E600947556 /* Project object */;
+}
