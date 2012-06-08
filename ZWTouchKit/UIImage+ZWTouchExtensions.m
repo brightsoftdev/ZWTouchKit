@@ -248,14 +248,14 @@
 static char *prerenderedKey;
 
 - (UIImage *)prerenderedImage {
-	if([[self associatedObjectForKey:prerenderedKey] isEqualToString:@"default"]) {
+	if([[self associatedObjectForKey:&prerenderedKey] isEqualToString:@"default"]) {
 		return self;
 	}
 	UIImage *prerenderedImage = [self prerenderedImageWithSize:self.size 
 														  mode:UIImageResizeModeScaleToFill 
 													colorSpace:CGColorSpaceDeviceRGB() 
 													bitmapInfo:(kCGBitmapByteOrder32Host | kCGImageAlphaPremultipliedFirst)];
-	[prerenderedImage setAssociatedObject:@"default" forKey:prerenderedKey policy:OBJC_ASSOCIATION_RETAIN];
+	[prerenderedImage setAssociatedObject:@"default" forKey:&prerenderedKey policy:OBJC_ASSOCIATION_RETAIN];
 	return prerenderedImage;
 }
 - (UIImage *)prerenderedImageWithSize:(CGSize)pSize {
@@ -266,18 +266,18 @@ static char *prerenderedKey;
 														  mode:UIImageResizeModeScaleToFill 
 													colorSpace:CGColorSpaceDeviceRGB() 
 													bitmapInfo:(kCGBitmapByteOrder32Host | kCGImageAlphaPremultipliedFirst)];
-	[prerenderedImage setAssociatedObject:NSStringFromCGSize(pSize) forKey:prerenderedKey policy:OBJC_ASSOCIATION_RETAIN];
+	[prerenderedImage setAssociatedObject:NSStringFromCGSize(pSize) forKey:&prerenderedKey policy:OBJC_ASSOCIATION_RETAIN];
 	return prerenderedImage;
 }
 - (UIImage *)prerenderedImageWithSize:(CGSize)pSize mode:(UIImageResizeMode)pMode {
-	if([[self associatedObjectForKey:prerenderedKey] isEqualToString:[NSString stringWithFormat:@"%@%i", NSStringFromCGSize(pSize), pMode]]) {
+	if([[self associatedObjectForKey:&prerenderedKey] isEqualToString:[NSString stringWithFormat:@"%@%i", NSStringFromCGSize(pSize), pMode]]) {
 		return self;
 	};
 	UIImage *prerenderedImage = [self prerenderedImageWithSize:pSize 
 														  mode:pMode 
 													colorSpace:CGColorSpaceDeviceRGB() 
 													bitmapInfo:(kCGBitmapByteOrder32Host | kCGImageAlphaPremultipliedFirst)];
-	[prerenderedImage setAssociatedObject:[NSString stringWithFormat:@"%@%i", NSStringFromCGSize(pSize), pMode] forKey:prerenderedKey policy:OBJC_ASSOCIATION_RETAIN];
+	[prerenderedImage setAssociatedObject:[NSString stringWithFormat:@"%@%i", NSStringFromCGSize(pSize), pMode] forKey:&prerenderedKey policy:OBJC_ASSOCIATION_RETAIN];
 	return prerenderedImage;
 }
 - (UIImage *)prerenderedImageWithSize:(CGSize)pSize mode:(UIImageResizeMode)pMode colorSpace:(CGColorSpaceRef)pColorSpace bitmapInfo:(CGBitmapInfo)pBitmapInfo {

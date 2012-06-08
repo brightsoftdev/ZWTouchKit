@@ -53,7 +53,7 @@
 		CGFontRef f = CGFontCreateWithFontName((__bridge CFStringRef)self.fontName);
 		storage = [UIFontCGFontStorage storageWithCGFont:f];
 		CGFontRelease(f);
-		[self setAssociatedObject:storage forKey:CGFontKey policy:OBJC_ASSOCIATION_RETAIN_NONATOMIC];
+		[self setAssociatedObject:storage forKey:&CGFontKey policy:OBJC_ASSOCIATION_RETAIN_NONATOMIC];
 	}
 	return storage.CGFont;
 }
@@ -64,7 +64,7 @@
 		CTFontRef f = CTFontCreateWithGraphicsFont(self.CGFont, self.pointSize, nil, nil);
 		storage = [UIFontCTFontStorage storageWithCTFont:f];
 		CFRelease(f);
-		[self setAssociatedObject:storage forKey:CTFontKey policy:OBJC_ASSOCIATION_RETAIN_NONATOMIC];
+		[self setAssociatedObject:storage forKey:&CTFontKey policy:OBJC_ASSOCIATION_RETAIN_NONATOMIC];
 	}
 	return storage.CTFont;
 }

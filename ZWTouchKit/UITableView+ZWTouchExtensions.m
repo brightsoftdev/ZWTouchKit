@@ -1,13 +1,6 @@
 #import "UITableView+ZWTouchExtensions.h"
 #import <ZWCoreKit/NSObject+ZWExtensions.h>
 
-@interface UITableView (ZWTouchExtensionsPrivate)
-
-- (void)zwRegisterNib:(UINib *)pNib forCellReuseIdentifier:(NSString *)pIdentifier;
-- (UITableViewCell *)zwDequeueReusableCellWithIdentifier:(NSString *)pIdentifier;
-
-@end
-
 @implementation UITableView (ZWTouchExtensions)
 
 + (void)load {
@@ -15,11 +8,11 @@
 		if(!iOS5) {
 			// swizzle dequeueReuseableCellWithIdentifier
 			[self exchangeInstanceMethodSelector:@selector(dequeueReusableCellWithIdentifier:)
-									withSelector:@selector(zwDequeueReusableCellWithIdentifier:)];
+									withSelector:@selector(zw_dequeueReusableCellWithIdentifier:)];
 			
 			// register registerNib:forCellReuseIdentifier
 			{
-				Method method = class_getInstanceMethod(self, @selector(zwRegisterNib:forCellReuseIdentifier:));
+				Method method = class_getInstanceMethod(self, @selector(zw_registerNib:forCellReuseIdentifier:));
 				[self addInstanceMethodForSelector:@selector(registerNib:forCellReuseIdentifier:)
 									implementation:method_getImplementation(method)
 									 typeEncodings:method_getTypeEncoding(method)];
@@ -29,10 +22,19 @@
 }
 
 static char *nibDictionaryKey;
-- (UITableViewCell *)zwDequeueReusableCellWithIdentifier:(NSString *)pIdentifier {
-	UITableViewCell *cell = [self zwDequeueReusableCellWithIdentifier:pIdentifier];
+- (NSMutableDictionary *)zw_nibDictionary {
+	NSMutableDictionary *nibDictionary = [self associatedObjectForKey:&nibDictionaryKey];
+	if(!nibDictionary) {
+		nibDictionary  = [NSMutableDictionary dictionaryWithCapacity:10];
+		[self setAssociatedObject:nibDictionary forKey:&nibDictionaryKey policy:OBJC_ASSOCIATION_RETAIN_NONATOMIC];
+	}
+	return nibDictionary;
+}
+
+- (UITableViewCell *)zw_dequeueReusableCellWithIdentifier:(NSString *)pIdentifier {
+	UITableViewCell *cell = [self zw_dequeueReusableCellWithIdentifier:pIdentifier];
 	if(cell == nil) {
-		NSMutableDictionary *nibDictionary = [self associatedObjectForKey:nibDictionaryKey];
+		NSMutableDictionary *nibDictionary = [self zw_nibDictionary];
 		UINib *nib = [nibDictionary objectForKey:pIdentifier];
 		if(nib != nil) {
 			NSArray *nibObjects = [nib instantiateWithOwner:nil options:nil];
@@ -49,12 +51,8 @@ static char *nibDictionaryKey;
 	}
 	return cell;
 }
-- (void)zwRegisterNib:(UINib *)pNib forCellReuseIdentifier:(NSString *)pIdentifier {
-	static dispatch_once_t zwRegisterNibsOnce = 0;
-	dispatch_once(&zwRegisterNibsOnce, ^{
-		[self setAssociatedObject:[NSMutableDictionary dictionaryWithCapacity:10] forKey:nibDictionaryKey policy:OBJC_ASSOCIATION_RETAIN_NONATOMIC];
-	});
-	NSMutableDictionary *nibDictionary = [self associatedObjectForKey:nibDictionaryKey];
+- (void)zw_registerNib:(UINib *)pNib forCellReuseIdentifier:(NSString *)pIdentifier {
+	NSMutableDictionary *nibDictionary = [self zw_nibDictionary];
 	if(pNib == nil) {
 		[nibDictionary removeObjectForKey:pIdentifier];
 	} else {
