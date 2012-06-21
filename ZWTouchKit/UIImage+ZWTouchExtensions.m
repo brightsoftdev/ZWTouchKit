@@ -13,7 +13,7 @@
 	}
 	return [self stretchableImageWithLeftCapWidth:floorf(self.size.width * 0.5) topCapHeight:0.0];
 }
-- (UIImage *)strechableVerticalImage {	
+- (UIImage *)stretchableVerticalImage {
 	if(self.topCapHeight != 0) {
 		return self;
 	}
@@ -105,7 +105,7 @@
 	CGFloat scale = widthScale < heightScale ? widthScale : heightScale;
 	CGRect rect = CGRectMake(0, 0, floorf(width * scale), floorf(height * scale));
 	
-	CGBitmapInfo bitmapInfo = CGImageGetBitmapInfo(cgImage);
+	CGBitmapInfo bitmapInfo = kCGImageAlphaPremultipliedLast;
 	CGColorSpaceRef colorSpace = CGImageGetColorSpace(cgImage);
 	
 	CGContextRef ctx = CGBitmapContextCreate(nil,

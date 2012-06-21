@@ -21,7 +21,7 @@ typedef NSUInteger UIImageResizeMode;
 #pragma mark - Stretchable
 
 - (UIImage *)stretchableHorizontalImage;
-- (UIImage *)strechableVerticalImage;
+- (UIImage *)stretchableVerticalImage;
 - (UIImage *)stretchableImage;
 
 #pragma mark - Orientation
