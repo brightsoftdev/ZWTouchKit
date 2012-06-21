@@ -5,7 +5,7 @@
 @implementation ZWStretchableVerticalImageView
 
 - (void)setImage:(UIImage *)pValue {
-	[super setImage:[pValue strechableVerticalImage]];
+	[super setImage:[pValue stretchableVerticalImage]];
 }
 - (void)awakeFromNib {
 	[super awakeFromNib];
