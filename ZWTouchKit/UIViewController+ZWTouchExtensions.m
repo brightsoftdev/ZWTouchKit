@@ -55,4 +55,12 @@ id imp_presentingViewController(id self, SEL _cmd, ...) {
 	}
 	return NO;
 }
+
+- (void)dismissModalViewControllerWithoutAnimation:(id)pSender {
+	[self.presentingViewController dismissModalViewControllerAnimated:NO];
+}
+- (void)dismissModalViewControllerWithAnimation:(id)pSender {
+	[self.presentingViewController dismissModalViewControllerAnimated:YES];
+}
+
 @end

@@ -1,5 +1,5 @@
 platform :ios
 
-dependency "ZWCoreKit"
+pod "ZWCoreKit"
 
 xcodeproj "ZWTouchKit.xcodeproj"

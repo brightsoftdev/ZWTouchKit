@@ -14,4 +14,7 @@
 
 - (id)presentModalViewControllerWithClassName:(NSString *)pClassName nibName:(NSString *)pNibNameOrNil bundle:(NSBundle *)pBundleOrNil animated:(BOOL)pAnimated;
 
+- (void)dismissModalViewControllerWithoutAnimation:(id)pSender;
+- (void)dismissModalViewControllerWithAnimation:(id)pSender;
+
 @end

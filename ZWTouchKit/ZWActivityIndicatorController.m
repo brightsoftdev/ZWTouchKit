@@ -89,9 +89,9 @@ static ZWActivityIndicatorControllerStyle _defaultStyleMask = ZWActivityIndicato
 	dimColor = [pValue colorWithAlphaComponent:1.0];
 	if(dimColor != nil) {
 		self.dimView.colors = [NSArray arrayWithObjects:
-							   (id)[[dimColor colorWithAlphaComponent:0.4] CGColor],
-							   (id)[[dimColor colorWithAlphaComponent:0.6] CGColor],
-							   (id)[[dimColor colorWithAlphaComponent:0.8] CGColor],
+							   (id)[[dimColor colorWithAlphaComponent:0.3] CGColor],
+							   (id)[[dimColor colorWithAlphaComponent:0.5] CGColor],
+							   (id)[[dimColor colorWithAlphaComponent:0.5] CGColor],
 							   nil];
 		[self.dimView setNeedsDisplay];
 	}
