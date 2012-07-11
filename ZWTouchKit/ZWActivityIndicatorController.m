@@ -9,9 +9,6 @@
 	UIView *boxView;
 	UIActivityIndicatorView *activityIndicator;
 	
-	UIColor *dimColor;
-	UIColor *boxColor;
-	
 	CGPoint center;
 	
 	BOOL hidden;
@@ -46,8 +43,9 @@
 @synthesize view;
 @synthesize dimView;
 @synthesize boxView;
-@dynamic dimColor;
-@dynamic boxColor;
+@synthesize dimColors;
+@synthesize dimColorsLocations;
+@synthesize boxColor;
 @synthesize activityIndicator;
 @synthesize center;
 @synthesize hidden;
@@ -82,22 +80,13 @@ static ZWActivityIndicatorControllerStyle _defaultStyleMask = ZWActivityIndicato
 	self.dimView.hidden = !dim;
 	self.boxView.hidden = (!box || dim);
 }
-- (UIColor *)dimColor {
-	return dimColor;
+- (void)setDimColors:(NSArray *)pValue {
+	dimColors = pValue;
+	self.dimView.colors = pValue;
 }
-- (void)setDimColor:(UIColor *)pValue {
-	dimColor = [pValue colorWithAlphaComponent:1.0];
-	if(dimColor != nil) {
-		self.dimView.colors = [NSArray arrayWithObjects:
-							   (id)[[dimColor colorWithAlphaComponent:0.3] CGColor],
-							   (id)[[dimColor colorWithAlphaComponent:0.5] CGColor],
-							   (id)[[dimColor colorWithAlphaComponent:0.5] CGColor],
-							   nil];
-		[self.dimView setNeedsDisplay];
-	}
-}
-- (UIColor *)boxColor {
-	return boxColor;
+- (void)setDimColorsLocations:(NSArray *)pValue {
+	dimColorsLocations = pValue;
+	self.dimView.locations = pValue;
 }
 - (void)setBoxColor:(UIColor *)pValue {
 	boxColor = pValue;
@@ -140,7 +129,7 @@ static ZWActivityIndicatorControllerStyle _defaultStyleMask = ZWActivityIndicato
 }
 + (id)presentInWindow:(UIWindow *)pWindow styleMask:(ZWActivityIndicatorControllerStyle)pStyleMask {
 	NSString *identifier = [NSString stringWithFormat:@"%p", pWindow];
-	if([[self activityIndicatorControllers] objectForKey:identifier] == nil) {
+	if([[self activityIndicatorControllers] objectForKey:identifier] != nil) {
 		return nil;
 	}
 	ZWActivityIndicatorController *vc = [[ZWActivityIndicatorController alloc] initWithStyleMask:pStyleMask];
@@ -180,12 +169,7 @@ static ZWActivityIndicatorControllerStyle _defaultStyleMask = ZWActivityIndicato
 										 UIViewAutoresizingFlexibleRightMargin);
 		self.dimView.opaque = NO;
 		self.dimView.startPoint = CGPointMake(0.5, 0.5);
-		self.dimView.endPoint = CGPointMake(0.5, 0.5);
-		self.dimView.locations = [NSArray arrayWithObjects:
-								  [NSNumber numberWithFloat:0.0],
-								  [NSNumber numberWithFloat:0.75],
-								  [NSNumber numberWithFloat:0.85],
-								  nil];
+		self.dimView.endPoint = CGPointMake(0.5, 1.0);
 		[self.view addSubview:self.dimView];
 		
 		// setup box
@@ -207,7 +191,14 @@ static ZWActivityIndicatorControllerStyle _defaultStyleMask = ZWActivityIndicato
 		
 		// set colors
 		self.boxColor = [UIColor colorWithRGB:0x000000 alpha:0.8];
-		self.dimColor = [UIColor colorWithRGB:0x000000 alpha:1.0];
+		self.dimColors = [NSArray arrayWithObjects:
+						  [UIColor colorWithRGB:0x000000 alpha:0.3],
+						  [UIColor colorWithRGB:0x000000 alpha:0.5],
+						  nil];
+		self.dimColorsLocations = [NSArray arrayWithObjects:
+								   [NSNumber numberWithFloat:0.0],
+								   [NSNumber numberWithFloat:0.5],
+								   nil];
 		
 		self.styleMask = pStyleMask;
 		

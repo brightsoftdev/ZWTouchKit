@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		EE087AFF1456273B00966537 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE6E6D6143128F5001AAA59 /* UIKit.framework */; };
+		EE53E2E615AD3724002CC24B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE6E6D6143128F5001AAA59 /* UIKit.framework */; };
+		EE53E2E815AD3724002CC24B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE53E2E715AD3724002CC24B /* Foundation.framework */; };
+		EE53E2EA15AD3724002CC24B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE53E2E915AD3724002CC24B /* CoreGraphics.framework */; };
+		EE53E2F015AD3725002CC24B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE53E2EE15AD3725002CC24B /* InfoPlist.strings */; };
+		EE53E2F215AD3725002CC24B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE53E2F115AD3725002CC24B /* main.m */; };
+		EE53E2F615AD3725002CC24B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE53E2F515AD3725002CC24B /* AppDelegate.m */; };
+		EE53E30515AD376B002CC24B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE53E30415AD376B002CC24B /* CoreLocation.framework */; };
+		EE53E30715AD3770002CC24B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE53E30615AD3770002CC24B /* QuartzCore.framework */; };
+		EE53E30915AD377B002CC24B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE53E30815AD377B002CC24B /* CoreData.framework */; };
+		EE53E30B15AD377E002CC24B /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE53E30A15AD377E002CC24B /* ImageIO.framework */; };
+		EE53E30C15AD3786002CC24B /* libZWTouchKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE087AD0145626EB00966537 /* libZWTouchKit.a */; };
+		EE53E31015AD382E002CC24B /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE53E30F15AD382E002CC24B /* CoreText.framework */; };
+		EE53E31215AD3835002CC24B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE53E31115AD3835002CC24B /* MapKit.framework */; };
+		EE53E31415AD383A002CC24B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE53E31315AD383A002CC24B /* AVFoundation.framework */; };
 		EE98658114914F28007CD136 /* ZWActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98652C14914F28007CD136 /* ZWActionSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE98658214914F28007CD136 /* ZWActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98652D14914F28007CD136 /* ZWActionSheet.m */; };
 		EE98658314914F28007CD136 /* ZWActivityIndicatorController.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98652E14914F28007CD136 /* ZWActivityIndicatorController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE98658414914F28007CD136 /* ZWActivityIndicatorController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98652F14914F28007CD136 /* ZWActivityIndicatorController.m */; };
-		EE98658514914F28007CD136 /* ZWActivityView.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98653014914F28007CD136 /* ZWActivityView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE98658614914F28007CD136 /* ZWActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98653114914F28007CD136 /* ZWActivityView.m */; };
 		EE98658714914F28007CD136 /* ZWAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98653214914F28007CD136 /* ZWAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE98658814914F28007CD136 /* ZWAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = EE98653314914F28007CD136 /* ZWAlertView.m */; };
 		EE98658914914F28007CD136 /* ZWApplicationStateDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = EE98653414914F28007CD136 /* ZWApplicationStateDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -96,16 +108,40 @@
 		F2AFE4A92A7446C6AE669000 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C636C932874743799138EA71 /* libPods.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EE53E30D15AD3793002CC24B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE0D261E13D645E600947556 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE087ACF145626EB00966537;
+			remoteInfo = ZWTouchKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		29F8F08762A2440681FE6B20 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		C636C932874743799138EA71 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE087AD0145626EB00966537 /* libZWTouchKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libZWTouchKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE53E2E415AD3724002CC24B /* ZWTouchKitScratch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZWTouchKitScratch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE53E2E715AD3724002CC24B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EE53E2E915AD3724002CC24B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EE53E2ED15AD3725002CC24B /* ZWTouchKitScratch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZWTouchKitScratch-Info.plist"; sourceTree = "<group>"; };
+		EE53E2EF15AD3725002CC24B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EE53E2F115AD3725002CC24B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE53E2F315AD3725002CC24B /* ZWTouchKitScratch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZWTouchKitScratch-Prefix.pch"; sourceTree = "<group>"; };
+		EE53E2F415AD3725002CC24B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EE53E2F515AD3725002CC24B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EE53E30415AD376B002CC24B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EE53E30615AD3770002CC24B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EE53E30815AD377B002CC24B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EE53E30A15AD377E002CC24B /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		EE53E30F15AD382E002CC24B /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		EE53E31115AD3835002CC24B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		EE53E31315AD383A002CC24B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		EE98652C14914F28007CD136 /* ZWActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWActionSheet.h; sourceTree = "<group>"; };
 		EE98652D14914F28007CD136 /* ZWActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWActionSheet.m; sourceTree = "<group>"; };
 		EE98652E14914F28007CD136 /* ZWActivityIndicatorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWActivityIndicatorController.h; sourceTree = "<group>"; };
 		EE98652F14914F28007CD136 /* ZWActivityIndicatorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWActivityIndicatorController.m; sourceTree = "<group>"; };
-		EE98653014914F28007CD136 /* ZWActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWActivityView.h; sourceTree = "<group>"; };
-		EE98653114914F28007CD136 /* ZWActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWActivityView.m; sourceTree = "<group>"; };
 		EE98653214914F28007CD136 /* ZWAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWAlertView.h; sourceTree = "<group>"; };
 		EE98653314914F28007CD136 /* ZWAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWAlertView.m; sourceTree = "<group>"; };
 		EE98653414914F28007CD136 /* ZWApplicationStateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWApplicationStateDelegate.h; sourceTree = "<group>"; };
@@ -198,6 +234,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EE53E2E115AD3724002CC24B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE53E31415AD383A002CC24B /* AVFoundation.framework in Frameworks */,
+				EE53E31215AD3835002CC24B /* MapKit.framework in Frameworks */,
+				EE53E31015AD382E002CC24B /* CoreText.framework in Frameworks */,
+				EE53E30C15AD3786002CC24B /* libZWTouchKit.a in Frameworks */,
+				EE53E30B15AD377E002CC24B /* ImageIO.framework in Frameworks */,
+				EE53E30915AD377B002CC24B /* CoreData.framework in Frameworks */,
+				EE53E2EA15AD3724002CC24B /* CoreGraphics.framework in Frameworks */,
+				EE53E30715AD3770002CC24B /* QuartzCore.framework in Frameworks */,
+				EE53E30515AD376B002CC24B /* CoreLocation.framework in Frameworks */,
+				EE53E2E615AD3724002CC24B /* UIKit.framework in Frameworks */,
+				EE53E2E815AD3724002CC24B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -205,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				EE98652B14914F28007CD136 /* ZWTouchKit */,
+				EE53E2EB15AD3724002CC24B /* ZWTouchKitScratch */,
 				EE0D262913D645E600947556 /* Frameworks */,
 				EE0D262813D645E600947556 /* Products */,
 				29F8F08762A2440681FE6B20 /* Pods.xcconfig */,
@@ -215,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				EE087AD0145626EB00966537 /* libZWTouchKit.a */,
+				EE53E2E415AD3724002CC24B /* ZWTouchKitScratch.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -222,10 +278,40 @@
 		EE0D262913D645E600947556 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EE53E31315AD383A002CC24B /* AVFoundation.framework */,
+				EE53E31115AD3835002CC24B /* MapKit.framework */,
+				EE53E30F15AD382E002CC24B /* CoreText.framework */,
+				EE53E30A15AD377E002CC24B /* ImageIO.framework */,
+				EE53E30815AD377B002CC24B /* CoreData.framework */,
+				EE53E30615AD3770002CC24B /* QuartzCore.framework */,
+				EE53E30415AD376B002CC24B /* CoreLocation.framework */,
 				EEE6E6D6143128F5001AAA59 /* UIKit.framework */,
 				C636C932874743799138EA71 /* libPods.a */,
+				EE53E2E715AD3724002CC24B /* Foundation.framework */,
+				EE53E2E915AD3724002CC24B /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE53E2EB15AD3724002CC24B /* ZWTouchKitScratch */ = {
+			isa = PBXGroup;
+			children = (
+				EE53E2F415AD3725002CC24B /* AppDelegate.h */,
+				EE53E2F515AD3725002CC24B /* AppDelegate.m */,
+				EE53E2EC15AD3725002CC24B /* Supporting Files */,
+			);
+			path = ZWTouchKitScratch;
+			sourceTree = "<group>";
+		};
+		EE53E2EC15AD3725002CC24B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE53E2ED15AD3725002CC24B /* ZWTouchKitScratch-Info.plist */,
+				EE53E2EE15AD3725002CC24B /* InfoPlist.strings */,
+				EE53E2F115AD3725002CC24B /* main.m */,
+				EE53E2F315AD3725002CC24B /* ZWTouchKitScratch-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		EE98652B14914F28007CD136 /* ZWTouchKit */ = {
@@ -294,8 +380,6 @@
 			children = (
 				EE98652C14914F28007CD136 /* ZWActionSheet.h */,
 				EE98652D14914F28007CD136 /* ZWActionSheet.m */,
-				EE98653014914F28007CD136 /* ZWActivityView.h */,
-				EE98653114914F28007CD136 /* ZWActivityView.m */,
 				EE98653214914F28007CD136 /* ZWAlertView.h */,
 				EE98653314914F28007CD136 /* ZWAlertView.m */,
 				EE98653814914F28007CD136 /* ZWFirstResponderView.h */,
@@ -377,7 +461,6 @@
 			files = (
 				EE98658114914F28007CD136 /* ZWActionSheet.h in Headers */,
 				EE98658314914F28007CD136 /* ZWActivityIndicatorController.h in Headers */,
-				EE98658514914F28007CD136 /* ZWActivityView.h in Headers */,
 				EE98658714914F28007CD136 /* ZWAlertView.h in Headers */,
 				EE98658914914F28007CD136 /* ZWApplicationStateDelegate.h in Headers */,
 				EE98658B14914F28007CD136 /* ZWAudioPlayer.h in Headers */,
@@ -444,6 +527,24 @@
 			productReference = EE087AD0145626EB00966537 /* libZWTouchKit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		EE53E2E315AD3724002CC24B /* ZWTouchKitScratch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE53E2F915AD3725002CC24B /* Build configuration list for PBXNativeTarget "ZWTouchKitScratch" */;
+			buildPhases = (
+				EE53E2E015AD3724002CC24B /* Sources */,
+				EE53E2E115AD3724002CC24B /* Frameworks */,
+				EE53E2E215AD3724002CC24B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE53E30E15AD3793002CC24B /* PBXTargetDependency */,
+			);
+			name = ZWTouchKitScratch;
+			productName = ZWTouchKitScratch;
+			productReference = EE53E2E415AD3724002CC24B /* ZWTouchKitScratch.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -465,9 +566,21 @@
 			projectRoot = "";
 			targets = (
 				EE087ACF145626EB00966537 /* ZWTouchKit */,
+				EE53E2E315AD3724002CC24B /* ZWTouchKitScratch */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE53E2E215AD3724002CC24B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE53E2F015AD3725002CC24B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		95D4B4C335084AF5B1B4BF48 /* Copy Pods Resources */ = {
@@ -493,7 +606,6 @@
 			files = (
 				EE98658214914F28007CD136 /* ZWActionSheet.m in Sources */,
 				EE98658414914F28007CD136 /* ZWActivityIndicatorController.m in Sources */,
-				EE98658614914F28007CD136 /* ZWActivityView.m in Sources */,
 				EE98658814914F28007CD136 /* ZWAlertView.m in Sources */,
 				EE98658A14914F28007CD136 /* ZWApplicationStateDelegate.m in Sources */,
 				EE98658C14914F28007CD136 /* ZWAudioPlayer.m in Sources */,
@@ -534,7 +646,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EE53E2E015AD3724002CC24B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE53E2F215AD3725002CC24B /* main.m in Sources */,
+				EE53E2F615AD3725002CC24B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE53E30E15AD3793002CC24B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE087ACF145626EB00966537 /* ZWTouchKit */;
+			targetProxy = EE53E30D15AD3793002CC24B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE53E2EE15AD3725002CC24B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE53E2EF15AD3725002CC24B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		EE087AD9145626EB00966537 /* Debug */ = {
@@ -611,6 +751,45 @@
 			};
 			name = Release;
 		};
+		EE53E2F715AD3725002CC24B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZWTouchKitScratch/ZWTouchKitScratch-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "ZWTouchKitScratch/ZWTouchKitScratch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EE53E2F815AD3725002CC24B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZWTouchKitScratch/ZWTouchKitScratch-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				INFOPLIST_FILE = "ZWTouchKitScratch/ZWTouchKitScratch-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -628,6 +807,15 @@
 			buildConfigurations = (
 				EE0D263213D645E600947556 /* Debug */,
 				EE0D263313D645E600947556 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE53E2F915AD3725002CC24B /* Build configuration list for PBXNativeTarget "ZWTouchKitScratch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE53E2F715AD3725002CC24B /* Debug */,
+				EE53E2F815AD3725002CC24B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -52,10 +52,16 @@ NSString *ZWGradientViewTypeRadial = @"radial";
 		primitiveLocations = (CGFloat *)malloc(sizeof(CGFloat) * [self.locations count]);
 		NSInteger i = 0;
 		for(NSNumber *number in self.locations) {
-			primitiveLocations[i++] = [number doubleValue];
+			primitiveLocations[i++] = [number floatValue];
 		}
 	}
-	CGGradientRef gradient = CGGradientCreateWithColors(colorSpace, (__bridge CFArrayRef)self.colors, primitiveLocations);
+	
+	NSMutableArray *primitiveColours = [NSMutableArray arrayWithCapacity:self.colors.count];
+	for(UIColor *color in self.colors) {
+		[primitiveColours addObject:(id)color.CGColor];
+	}
+	
+	CGGradientRef gradient = CGGradientCreateWithColors(colorSpace, (__bridge CFArrayRef)primitiveColours, primitiveLocations);
 	
 	CGPoint p1 = CGPointMake(self.startPoint.x * self.bounds.size.width, self.startPoint.y * self.bounds.size.height);
 	CGPoint p2 = CGPointMake(self.endPoint.x * self.bounds.size.width, self.endPoint.y * self.bounds.size.height);

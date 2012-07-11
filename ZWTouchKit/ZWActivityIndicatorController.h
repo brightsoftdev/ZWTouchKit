@@ -15,7 +15,8 @@ typedef NSUInteger ZWActivityIndicatorControllerStyle;
 #pragma mark - Properties
 
 @property (nonatomic, assign) ZWActivityIndicatorControllerStyle styleMask;
-@property (nonatomic, strong) UIColor *dimColor;
+@property (nonatomic, strong) NSArray *dimColors;
+@property (nonatomic, strong) NSArray *dimColorsLocations;
 @property (nonatomic, strong) UIColor *boxColor;
 @property (nonatomic, assign) CGPoint centerOffset;
 

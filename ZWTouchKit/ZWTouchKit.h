@@ -40,7 +40,6 @@
 #import <ZWTouchKit/ZWStretchableVerticalImageView.h>
 #import <ZWTouchKit/ZWStretchableImageView.h>
 #import <ZWTouchKit/ZWFirstResponderView.h>
-#import <ZWTouchKit/ZWActivityView.h>
 #import <ZWTouchKit/ZWShapeView.h>
 #import <ZWTouchKit/ZWTextView.h>
 #import <ZWTouchKit/ZWTransitionView.h>
