@@ -38,6 +38,63 @@
 
 @implementation ZWActivityIndicatorController
 
+#pragma mark - Class Methods
+
++ (void)load {
+	@autoreleasepool {
+		[self setDefaultBoxColor:[UIColor colorWithRGB:0x000000 alpha:0.8]];
+		[self setDefaultDimColors:[NSArray arrayWithObjects:
+								   [UIColor colorWithRGB:0x000000 alpha:0.3],
+								   [UIColor colorWithRGB:0x000000 alpha:0.5],
+								   nil]];
+		[self setDefaultDimColorsLocations:[NSArray arrayWithObjects:
+											[NSNumber numberWithFloat:0.0],
+											[NSNumber numberWithFloat:0.5],
+											nil]];
+	}
+}
+
+#pragma mark - Class Properties
+
+static ZWActivityIndicatorControllerStyle _defaultStyleMask = ZWActivityIndicatorControllerStyleDim;
++ (ZWActivityIndicatorControllerStyle)defaultStyleMask {
+	return _defaultStyleMask;
+}
++ (void)setDefaultStyleMask:(ZWActivityIndicatorControllerStyle)pValue {
+	_defaultStyleMask = pValue;
+}
+
+static NSArray *_defaultDimColors = nil;
++ (NSArray *)defaultDimColors {
+	return _defaultDimColors;
+}
++ (void)setDefaultDimColors:(NSArray *)pValue {
+	_defaultDimColors = pValue;
+}
+static NSArray *_defaultDimColorsLocations = nil;
++ (NSArray *)defaultDimColorsLocations {
+	return _defaultDimColorsLocations;
+}
++ (void)setDefaultDimColorsLocations:(NSArray *)pValue {
+	_defaultDimColorsLocations = pValue;
+}
+static UIColor *_defaultBoxColor = nil;
++ (UIColor *)defaultBoxColor {
+	return _defaultBoxColor;
+}
++ (void)setDefaultBoxColor:(UIColor *)pColor {
+	_defaultBoxColor = pColor;
+}
+
++ (NSMutableDictionary *)activityIndicatorControllers {
+	static dispatch_once_t activityIndicatorControllersOnce;
+	static NSMutableDictionary *activityIndicatorControllers;
+	dispatch_once(&activityIndicatorControllersOnce, ^{
+		activityIndicatorControllers = [[NSMutableDictionary alloc] init];
+	});
+	return activityIndicatorControllers;
+}
+
 #pragma mark - Properties
 
 @synthesize view;
@@ -53,23 +110,6 @@
 @synthesize animationSemaphore;
 @synthesize styleMask;
 @synthesize centerOffset;
-
-+ (NSMutableDictionary *)activityIndicatorControllers {
-	static dispatch_once_t activityIndicatorControllersOnce;
-	static NSMutableDictionary *activityIndicatorControllers;
-	dispatch_once(&activityIndicatorControllersOnce, ^{
-		activityIndicatorControllers = [[NSMutableDictionary alloc] init];
-	});
-	return activityIndicatorControllers;
-}
-
-static ZWActivityIndicatorControllerStyle _defaultStyleMask = ZWActivityIndicatorControllerStyleDim;
-+ (ZWActivityIndicatorControllerStyle)defaultStyleMask {
-	return _defaultStyleMask;
-}
-+ (void)setDefaultStyleMask:(ZWActivityIndicatorControllerStyle)pValue {
-	_defaultStyleMask = pValue;
-}
 
 - (void)setStyleMask:(ZWActivityIndicatorControllerStyle)pValue {
 	styleMask = pValue;
@@ -190,15 +230,9 @@ static ZWActivityIndicatorControllerStyle _defaultStyleMask = ZWActivityIndicato
 		[self.view addSubview:self.activityIndicator];
 		
 		// set colors
-		self.boxColor = [UIColor colorWithRGB:0x000000 alpha:0.8];
-		self.dimColors = [NSArray arrayWithObjects:
-						  [UIColor colorWithRGB:0x000000 alpha:0.3],
-						  [UIColor colorWithRGB:0x000000 alpha:0.5],
-						  nil];
-		self.dimColorsLocations = [NSArray arrayWithObjects:
-								   [NSNumber numberWithFloat:0.0],
-								   [NSNumber numberWithFloat:0.5],
-								   nil];
+		self.boxColor = [[self class] defaultBoxColor];
+		self.dimColors = [[self class] defaultDimColors];
+		self.dimColorsLocations = [[self class] defaultDimColorsLocations];
 		
 		self.styleMask = pStyleMask;
 		

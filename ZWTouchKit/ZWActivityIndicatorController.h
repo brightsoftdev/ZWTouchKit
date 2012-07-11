@@ -12,6 +12,18 @@ typedef NSUInteger ZWActivityIndicatorControllerStyle;
 @interface ZWActivityIndicatorController : NSObject {
 }
 
+#pragma mark - Class Properties
+
++ (ZWActivityIndicatorControllerStyle)defaultStyleMask;
++ (void)setDefaultStyleMask:(ZWActivityIndicatorControllerStyle)pValue;
+
++ (NSArray *)defaultDimColors;
++ (void)setDefaultDimColors:(NSArray *)pValue;
++ (NSArray *)defaultDimColorsLocations;
++ (void)setDefaultDimColorsLocations:(NSArray *)pValue;
++ (UIColor *)defaultBoxColor;
++ (void)setDefaultBoxColor:(UIColor *)pColor;
+
 #pragma mark - Properties
 
 @property (nonatomic, assign) ZWActivityIndicatorControllerStyle styleMask;
@@ -19,10 +31,6 @@ typedef NSUInteger ZWActivityIndicatorControllerStyle;
 @property (nonatomic, strong) NSArray *dimColorsLocations;
 @property (nonatomic, strong) UIColor *boxColor;
 @property (nonatomic, assign) CGPoint centerOffset;
-
-+ (ZWActivityIndicatorControllerStyle)defaultStyleMask;
-+ (void)setDefaultStyleMask:(ZWActivityIndicatorControllerStyle)pValue;
-
 #pragma mark - Initialization
 
 + (id)presentInViewController:(UIViewController *)pViewController;
