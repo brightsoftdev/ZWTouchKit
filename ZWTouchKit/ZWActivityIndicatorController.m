@@ -41,17 +41,23 @@
 #pragma mark - Class Methods
 
 + (void)load {
-	@autoreleasepool {
-		[self setDefaultBoxColor:[UIColor colorWithRGB:0x000000 alpha:0.8]];
-		[self setDefaultDimColors:[NSArray arrayWithObjects:
-								   [UIColor colorWithRGB:0x000000 alpha:0.3],
-								   [UIColor colorWithRGB:0x000000 alpha:0.5],
-								   nil]];
-		[self setDefaultDimColorsLocations:[NSArray arrayWithObjects:
-											[NSNumber numberWithFloat:0.0],
-											[NSNumber numberWithFloat:0.5],
-											nil]];
-	}
+#if !OBJC_ARC_WEAK
+	dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.0 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+#endif
+		@autoreleasepool {
+			[self setDefaultBoxColor:[UIColor colorWithRGB:0x000000 alpha:0.8]];
+			[self setDefaultDimColors:[NSArray arrayWithObjects:
+									   [UIColor colorWithRGB:0x000000 alpha:0.3],
+									   [UIColor colorWithRGB:0x000000 alpha:0.5],
+									   nil]];
+			[self setDefaultDimColorsLocations:[NSArray arrayWithObjects:
+												[NSNumber numberWithFloat:0.0],
+												[NSNumber numberWithFloat:0.5],
+												nil]];
+		}
+#if !OBJC_ARC_WEAK
+	});
+#endif
 }
 
 #pragma mark - Class Properties

@@ -4,21 +4,27 @@
 @implementation UITableView (ZWTouchExtensions)
 
 + (void)load {
-	@autoreleasepool {
-		if(!iOS5) {
-			// swizzle dequeueReuseableCellWithIdentifier
-			[self exchangeInstanceMethodSelector:@selector(dequeueReusableCellWithIdentifier:)
-									withSelector:@selector(zw_dequeueReusableCellWithIdentifier:)];
-			
-			// register registerNib:forCellReuseIdentifier
-			{
-				Method method = class_getInstanceMethod(self, @selector(zw_registerNib:forCellReuseIdentifier:));
-				[self addInstanceMethodForSelector:@selector(registerNib:forCellReuseIdentifier:)
-									implementation:method_getImplementation(method)
-									 typeEncodings:method_getTypeEncoding(method)];
+#if !OBJC_ARC_WEAK
+	dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.0 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+#endif
+		@autoreleasepool {
+			if(!iOS5) {
+				// swizzle dequeueReuseableCellWithIdentifier
+				[self exchangeInstanceMethodSelector:@selector(dequeueReusableCellWithIdentifier:)
+										withSelector:@selector(zw_dequeueReusableCellWithIdentifier:)];
+				
+				// register registerNib:forCellReuseIdentifier
+				{
+					Method method = class_getInstanceMethod(self, @selector(zw_registerNib:forCellReuseIdentifier:));
+					[self addInstanceMethodForSelector:@selector(registerNib:forCellReuseIdentifier:)
+										implementation:method_getImplementation(method)
+										 typeEncodings:method_getTypeEncoding(method)];
+				}
 			}
 		}
-	}
+#if !OBJC_ARC_WEAK
+    });
+#endif
 }
 
 static char *nibDictionaryKey;

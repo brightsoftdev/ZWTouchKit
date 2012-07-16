@@ -12,12 +12,19 @@ id imp_presentingViewController(id self, SEL _cmd, ...) {
 #pragma mark - Load
 
 + (void)load {
-	[super load];
-	if(!iOS5) {
-		[self addInstanceMethodForSelector:@selector(presentingViewController) 
-							implementation:imp_presentingViewController 
-							 typeEncodings:"@@:"];
-	}
+#if !OBJC_ARC_WEAK
+	dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.0 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+#endif
+		@autoreleasepool {
+			if(!iOS5) {
+				[self addInstanceMethodForSelector:@selector(presentingViewController)
+									implementation:imp_presentingViewController
+									 typeEncodings:"@@:"];
+			}
+		}
+#if !OBJC_ARC_WEAK
+	});
+#endif
 }
 
 #pragma mark - Properties
